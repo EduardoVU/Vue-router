@@ -10,6 +10,16 @@ const router = createRouter({
       component: () => import('../views/PokemonsView.vue')
     },
     {
+      path: '/pinia-counter',
+      name: 'pinia counter',
+      component: () => import('../views/HomeView.vue')
+    },
+    {
+      path: '/favoritos',
+      name: 'favoritos',
+      component: () => import('../views/FavoritosView.vue')
+    },
+    {
       path: '/:name',
       name: 'pokename',
       component: () => import('../views/PokeView.vue')

@@ -12,6 +12,8 @@ import { RouterLink, RouterView } from 'vue-router'
       <nav>
         <RouterLink to="/">Pokemons</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/pinia-counter">Pinia Counter</RouterLink>
+        <RouterLink to="/favoritos">Favoritos</RouterLink>
       </nav>
     </div>
   </header>
@@ -24,6 +26,8 @@ header {
   line-height: 1.5;
   display: flex;
   justify-content: space-around;
+  background-color: #34495E;
+  width: 100%;
 }
 
 .logo {
@@ -41,12 +45,12 @@ nav {
 }
 
 nav a {
-  color: #41B883;
+  color: lightslategray;
   text-decoration: none;
   font-size: 1.8rem;
 }
 
-nav > a:first-of-type {
+nav > a:not(:last-of-type) {
   margin: 0 3vw 0 0;
 }
 
